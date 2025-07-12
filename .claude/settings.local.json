@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm add:*)",
+      "Bash(netlify dev:*)",
+      "Bash(npx tsc:*)",
+      "WebFetch(domain:openauth.js.org)"
+    ],
+    "deny": []
+  }
+}

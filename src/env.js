@@ -10,6 +10,9 @@ export const env = createEnv({
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
+    EVE_CLIENT_ID: z.string(),
+    EVE_CLIENT_SECRET: z.string(),
+    OPENAUTH_SECRET: z.string(),
   },
 
   /**
@@ -27,6 +30,9 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
+    EVE_CLIENT_ID: process.env.EVE_CLIENT_ID,
+    EVE_CLIENT_SECRET: process.env.EVE_CLIENT_SECRET,
+    OPENAUTH_SECRET: process.env.OPENAUTH_SECRET,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**
